@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITM</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="ancho">
+        <div class="bordeSuperior">
+            <div class="logoITM">
+                <img src="imagenes/logotransparente.png" alt="logoITM">
+            </div>
+            <div class="formFondoWhite">
+                <div class="formularioContainer">
+                    <form action="enviar.php" name="formulario" method="post">
+                        <div class="contenedoresSuperiorForm">
+                            <div class="datesContenedores">
+                                <label for="name"><span>*</span> Nombre</label>
+                                <input id="name" type="text" class="labelTam">
+                            </div>
+                            <div class="datesContenedores">
+                                <label for="apellido"><span>*</span> Apellido</label>
+                                <input id="apellido" type="text" class="labelTam">
+                            </div>
+                            <div class="datesContenedores">
+                                <label for="sexo">Sexo:</label>
+                                <label for="">
+                                    <input type="radio" name="sexo" value="M">
+                                    M
+                                </label>
+                                <label for="">
+                                    <input type="radio" name="sexo" value="H">
+                                    H
+                                </label>
+                            </div>
+                            <div class="contenedoresInferiorForm">
+                                <div class="contenedorFecha">
+                                    <div class="fecha">
+                                        <label for="nacimiento">Fecha de nacimiento:</label>
+                                        <select name="dia" id="diaNacimiento">
+                                            <option value="dia">dia</option>5
+                                        </select>
+                                        <select name="mes" id="mesNacimiento">
+                                            <option value="mes">mes</option>
+                                        </select>
+                                        <select name="anio" id="anioNacimiento">
+                                            <option value="anio">año</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="btnEnviar">
+                                    <button id="enviar" class="btn_Enviar" type="button" value="enviar" onclick="validar()">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="menuScroll">
+            <div class="contenedoresMenu" id="Inicio">
+                <a href="" id="Inicio">Inicio</a>
+            </div>
+            <div class="contenedoresMenu">
+                <a href="">Requisitos</a>
+            </div>
+            <div class="contenedoresMenu">
+                <a href="">Materias</a>
+            </div>
+            <div class="contenedoresMenu">
+                <a href="">Organigrama</a>
+            </div>
+            <div class="contenedoresMenu">
+                <a href="">Instalaciones</a>
+            </div>
+            <div class="contenedoresMenu">
+                <a href="">Inscripciones</a>
+            </div>
+            <div class="contenedoresMenu">
+                <a href="">Contacto</a>
+            </div>
+        </div>
+        <div class="fondoISC">
+        </div>
+        <div class="centro">
+            <div class="contenedoresCentro">
+                <div class="contenedoresCentro_Engranaje_Y_Title">
+                    <div class="engranaje">
+                        <img src="imagenes/engrane.png" alt="Engranaje">
+                    </div>
+                    <div class="contenedoresCentro_Title">
+                        <h3><span>UNIVERSIDAD <br> DE PRESTIGIO</span></h3>
+                    </div>
+                </div>
+                <div class="lineGris"></div>
+                <br>
+                <div class="contenedorCentroImagen">
+                    <img src="imagenes/foto1.jpg" alt="ITMFachada">
+                </div>
+                <br>
+                <div class="contedorcentroTxt">
+                    <p>Puede que después de tu carrera quieras <br>
+                    estudiar una maestría o un doctorado que <br>
+                    te permita especializarte. Hay oportunidades <br>
+                    muy interesantes para estudiar con buenas <br>
+                    becas en el extranjero.</p>
+                </div>
+            </div>
+
+            <div class="contenedoresCentro">
+                <div class="contenedoresCentro_Engranaje_Y_Title">
+                    <div class="engranaje">
+                        <img src="imagenes/engrane.png" alt="">
+                    </div>
+                    <div class="contenedoresCentro_Title">
+                        <h3><br> DOCENTES</h3>
+                    </div>
+                </div>
+                <div class="lineGris"></div>
+                <br>
+                <div class="contenedorCentroImagen">
+                    <img src="imagenes/foto2.jpg" alt="ITMFachada">
+                </div>
+                <br>
+                <div class="contedorcentroTxt">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quos ex dicta praesentium maxime! Qui labore nobis 
+                        ducimus in dicta minima, quo soluta? Doloremque 
+                        repudiandae eligendi aliquid esse in eveniet tenetur! 
+                        Qui labore nobis ducimus in dicta minima.</p>
+                </div>
+            </div>
+            
+            <div class="contenedoresCentro">
+                <div class="contenedoresCentro_Engranaje_Y_Title">
+                    <div class="engranaje">
+                        <img src="imagenes/engrane.png" alt="">
+                    </div>
+                    <div class="contenedoresCentro_Title">
+                        <h3><br> INSTALACIONES</h3>
+                    </div>
+                </div>
+                <div class="lineGris"></div>
+                <br>
+                <div class="contenedorCentro_TresImagenes">
+                    <div class="contenedorCentro_TresImagenes_Superior">
+                        <div class="contenedorCentro_TresImagenes_Superior_IMG">
+                            <img src="imagenes/instalaciones1.jpg" alt="instalaciones1">
+                        </div>
+                        <div class="contenedorCentro_TresImagenes_Superior_IMG">
+                            <img src="imagenes/instalaciones2.jpg" alt="instalaciones2">
+                        </div>
+                    </div>
+                    <div class="contenedorCentro_TresImagenes_Inferior">
+                        <img src="imagenes/instalaciones3.jpg" alt="instalaciones3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_Tres">
+            <div class="perfilDeEgresado">
+                <h2>Perfil del Egresado</h2>
+
+                <div class="puntosPerfil_Egresado">
+                    <div class="puntoEgresado">
+                        <img src="imagenes/vineta1.jpg" alt="vineta">
+                    </div>
+                    <div class="puntoEgresado_Txt">
+                        <p>Desarrollar, implmentar y administrar software de sistemas o de aplicación que <br>
+                        cumpla con los estándares de calidad con el fin de apoyar la productividad y <br>
+                        competividad de las organizaciones.</p>
+                    </div>
+                </div>
+
+                <div class="puntosPerfil_Egresado">
+                    <div class="puntoEgresado">
+                        <img src="imagenes/vineta1.jpg" alt="vineta">
+                    </div>
+                    <div class="puntoEgresado_Txt">
+                        <p>Seleccionar y aplicar herramientas matemáticas para el modelo, diseño y <br>
+                            desarrollo de tecnología computacional.</p>
+                    </div>
+                </div>
+                <div class="puntosPerfil_Egresado">
+                    <div class="puntoEgresado">
+                        <img src="imagenes/vineta1.jpg" alt="vineta">
+                    </div>
+                    <div class="puntoEgresado_Txt">
+                        <p>Integrar diversas soluciones computacionales para el modelado, diseño y <br>
+                        diferentes tecnologías, plataformas o dispositivos.</p>
+                    </div>
+                </div>
+                <div class="puntosPerfil_Egresado">
+                    <div class="puntoEgresado">
+                        <img src="imagenes/vineta1.jpg" alt="vineta">
+                    </div>
+                    <div class="puntoEgresado_Txt">
+                        <p>Diseñar, desarrollar y administrar bases de datos conforme a requerimientos <br>
+                            definidos, normas organizacionales de manejo de seguridad de la infromación, <br>
+                            utilizando tecnologías emergentes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="campoDeTrabajo">
+                <div class="cajaCampodeTrabajo">
+                    <h4>CAMPO DE TRABAJO</h4>
+                    
+                    <p>Empresas y organismos en todos los 
+                    campos de la actividad económica, 
+                    gubernamental y de educación, en
+                    donde se pueden optimizar los
+                    procesos al automatizar el manejo de
+                    la informacion de las empresas.</p>
+
+                    <br>
+                    <div class="btnCampo">
+                        <a href="">ver mas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor_inferior">
+            <div class="contenedores_de_Contenedor_Inferior">
+                <br>
+                <h3><span class="txtAmarillo">INSTITUTO TECNOLÓGICO DE MÉRIDA</span></h3>
+                <br><br>
+                <h3>Av. Tecnológico km. 4.5 S/N C.P. 97118</h3>
+                <br><br>
+                <h3>Preguntas y comentarios: <br>
+                    <a href="">www@itmerida.mx</a></h3>
+                <br><br>
+                <h3><a href="">Tel:(999) 964-5000, 964-5001</a></h3>
+                
+            </div>
+            <div class="contenedores_de_Contenedor_Inferior">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7448.999358114238!2d-89.62128585132133!3d21.01268352310662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5676a65077d641%3A0x39dfe74777312656!2sTecNM%20-%20Campus%20M%C3%A9rida!5e0!3m2!1ses!2smx!4v1681448744278!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+            </div>
+            <div class="contenedores_de_Contenedor_Inferior">
+                <div class="inferiorLogo">
+                    <img src="imagenes/logotransparente.png" alt="logo">
+                </div>
+                <br>
+                <h3><span>Alumno:</span> Josué Emmanuel Canul Kú</h3>
+                <h3><span>Grupo:</span> 7SA</h3>
+                <h3><span>Materia:</span> Programación Web</h3>
+            </div>
+        </div>
+        <div class="bordeInferiorRojo"></div>
+    </div>
+
+    <script>
+        function validar() {
+            if(document.getElementById("name").value.length == 00) {
+                alert("Escriba su nombre")
+                document.getElementById("name").focus()
+                return 0
+            }
+            if(document.getElementById("apellido").value.length == 00) {
+                alert("Escriba su nombre")
+                document.getElementById("name").focus()
+                return 0
+            }
+            document.formulario.submit()
+        }
+    </script>
+</body>
+</html>
